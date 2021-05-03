@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
-const mysql = require("mysql");
+// const mysql = require("mysql");
 
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -18,12 +18,12 @@ client.config = config;
 
 //Data Base Connections
 
-var con = mysql.createConnection({
-  host: "bananagaming.co.za",
-  user: "bananagaming.co.",
-  password: "Noah@123",
-  database: "bananagaming_co_za",
-});
+// var con = mysql.createConnection({
+//   host: "",
+//   user: "",
+//   password: "",
+//   database: "",
+// });
 
 con.connect(function(err) {
   if (err) throw err;
